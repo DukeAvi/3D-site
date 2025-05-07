@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   const bag = document.querySelector('#punchingBag');
   let isCursorOverBag = false;
-  // No need for lastIntersectionData if we don't use the hit point for direction
 
   if (bag) {
-    const originalRotation = { x: 0, y: 0, z: 0 }; // Bag starts at 0 0 0
+    const originalRotation = { x: 0, y: 0, z: 0 };
 
     function punchBag() {
       console.log('Punching bag action triggered (front-to-back only)!');
